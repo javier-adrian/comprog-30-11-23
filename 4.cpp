@@ -59,7 +59,7 @@ int main () {
         cout <<         "Price   : " << price << endl;
 
         do {
-            cout << endl << "How much " << prodName << "s? "; cin >> quantity;
+            cout << endl << "How much " << prodName << "s? (1-100)"; cin >> quantity;
 
             if (!cin) {
                 cout << endl << "Input in numbers next time." << endl;
@@ -68,7 +68,7 @@ int main () {
             else if (quantity < 1)
                 cout << endl << "You can't have... nothing... of something... you know?" << endl;
             else if (quantity > 100)
-                cout << endl << "You can't buy that many. It's store policy." << endl;
+                cout << endl << "You can't buy that many." << endl;
         } while (quantity > 100 || quantity < 1);
 
 
